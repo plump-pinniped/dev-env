@@ -17,13 +17,14 @@ require("lazy").setup({
   {
     'rebelot/kanagawa.nvim',
     priority = 1000,
-    opts = {
-      dimInactive = true,
-      overrides = function(colors)
-        Visual = {fg= colors.palette.carpYellow, bg=colors.palette.oniViolet}
-      end
-    },
     config = function()
+      require('kanagawa').setup({
+        overrides = function(colors) 
+          return {
+            Visual = {fg= colors.palette.carpYellow, bg=colors.palette.oniViolet}
+          }
+        end
+      })
       vim.cmd.colorscheme 'kanagawa'
     end,
   },
