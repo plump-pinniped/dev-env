@@ -1,6 +1,1 @@
-require("nvim-config")
-require("mappings")
-require("plugins.lazy")
-require("plugins.telescope")
-require("plugins.treesitter")
-require("plugins.lsp")
+require("config.lazy")
