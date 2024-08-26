@@ -2,8 +2,8 @@
 vim.keymap.set("n", "<leader>ef", vim.cmd.Ex)
 
 -- go back to normal mode
-vim.keymap.set("i", "kj", "<Esc>")
-vim.keymap.set("v", "kj", "<Esc>")
+vim.keymap.set("i", "nm", "<Esc>")
+vim.keymap.set("v", "nm", "<Esc>")
 
 -- toggle undo tree
 vim.keymap.set("n", "<leader>ut", vim.cmd.UndotreeToggle)
