@@ -2,8 +2,8 @@
 vim.keymap.set("n", "<leader>ef", vim.cmd.Ex)
 
 -- go back to normal mode
-vim.keymap.set("i", "nm", "<Esc>")
-vim.keymap.set("v", "nm", "<Esc>")
+vim.keymap.set("i", "fj", "<Esc>")
+vim.keymap.set("v", "fj", "<Esc>")
 
 -- toggle undo tree
 vim.keymap.set("n", "<leader>ut", vim.cmd.UndotreeToggle)
@@ -31,4 +31,14 @@ vim.keymap.set("n", "<leader>Y", '"+Y')
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
+-- Get lsp hint
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
+
+-- buffer switching
+vim.keymap.set("n", "bp", ":bp<CR>")
+vim.keymap.set("n", "bn", ":bn<CR>")
+vim.keymap.set("n", "bd", ":bd<CR>")
+
+-- insert line below or above
+vim.keymap.set("n", "<c-o>", "o<esc>")
+vim.keymap.set("n", "<c-i>", "O<esc>")
