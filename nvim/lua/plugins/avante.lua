@@ -1,3 +1,4 @@
+return {}
 -- let's disable avante by default
 -- return {
 -- 	"yetone/avante.nvim",
